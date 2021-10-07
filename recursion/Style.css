@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.code-container
+{
+    width: 25%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.circle
+{
+    position: absolute;
+}
+
+.circle:hover 
+{
+    z-index: auto;
+    cursor: pointer;
+}
+
+svg text 
+{
+    position: relative;
+    z-index: 5;
+}
+
+.arguments-input
+{
+    margin: 1rem;
+}
+
+.array-input
+{
+    margin: 1rem;
+}
+
+.code-selector
+{
+    margin-top: 1rem;
+    border: 2px solid black;
+    width: 100%;
+}
+
+.code-selector:hover
+{
+    box-shadow: 2px 2px 2px 2px;
+    cursor: pointer;
+}
+.arguments-input
+{
+    margin: 1rem;
+}
+
+.code
+{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    border: 2px solid black;
+    background-color: rgb(193, 230, 226)
+}
+
+.text
+{
+    display: flex;
+    position: absolute;
+    right: 6.5rem;
+    bottom: 4rem;
+}
+
+.stack
+{
+    display: table-cell;
+    border: 20px solid rgb(0, 176, 182);
+    width: 17.5%;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    border-radius: 1rem;
+    font-size: large;
+}
+
+.stack-element
+{
+    text-align: center;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.run 
+{
+    background-color: rgb(0, 219, 248);
+}
+.stop
+{
+    background-color: rgb(12, 136, 145);
+}
+
+input 
+{
+    box-shadow: 2px 2px 2px 2px;
+}
+
+button 
+{
+    box-shadow: 2px 2px 2px 2px;
+    margin: 1rem;
+    margin-right: 2rem;
+}
+
+button:hover
+{
+    box-shadow: 3px 3px 3px 3px;
+    cursor: pointer;
+}
+
+.slider
+{
+    cursor: pointer;
+}
+
+.code-selector option:hover 
+{
+    cursor: pointer;
+}

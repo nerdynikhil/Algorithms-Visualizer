@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Recursion Visualizer</title>
+</head>
+
+<body>
+    <div class="code-container">
+        <div class="arguments-input">
+            <label for="args">Enter value of n</label><br />
+            <input id="args" />
+        </div>
+        <select class="code-selector">
+            <option>Fibonacci</option>
+            <option>Factorial</option>
+            <option>Binomial Coefficient</option>
+            <option>Coin Change</option>
+        </select>
+        <div class="code"></div>
+        <div class="animation-control">
+            <button class="stop">Stop Vizualization</button>
+            <button class="run">Vizualize</button><br />
+
+            <label for="slider">Adjust the Speed of Animation:</label> <br />
+            <input type="range" min="0" max="100" class="slider" />
+        </div>
+    </div>
+
+
+    <div class="viz" style="height: 100%; width: 55%;"></div>
+
+    <div class="text">Call Stack</div>
+    <div class="callstack">
+        <div class="stack">
+        </div>
+    </div>
+</body>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./AllCodes.js"></script>
+<script src="./AddCodes.js"></script>
+<script src="./Script.js"></script>
+<script src="./PrintTree.js"></script>
+
+</html>

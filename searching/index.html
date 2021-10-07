@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Searching Algorithms</title>
+    <!-- fontaweomse cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Css/style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="outer-wrapper">
+        <!-- nav bar section -->
+        <nav class="navbar container shadow">
+          <!-- navbar left section -->
+          <!-- <div class="nav-left-section">
+            <h2><a href="">Searching Algorithms</a></h2>
+          </div> -->
+          <!-- navbar middle section -->
+          <div class="nav-middle-section">
+            <div class="linear-wrapper search-btn">
+              <button class="linear-btn btn" id="linear-search">
+                Linear Search
+              </button>
+            </div>
+            <div class="binary-wrapper search-btn">
+              <button class="binary-btn btn" id="binary-search">
+                Binary Search
+              </button>
+            </div>
+          </div>
+          <!-- navbar right section -->
+          <!-- <div class="nav-right-section">
+            <h2><a href="">Visualizer</a></h2>
+          </div> -->
+        </nav>
+
+        <!-- main body section  -->
+        <div class="main">
+          <div class="main-wrapper shadow">
+            <!-- searching visual section -->
+            <div class="search-window">
+              <div class="box-container">
+                <div class="box" id="box-wrapper-0">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box0"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-1">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box1"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-2">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box2"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-3">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box3"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-4">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box4"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-5">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box5"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-6">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box6"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-7">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box7"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-8">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box8"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-9">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box9"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+            </div>
+            <!-- search option section -->
+            <div class="search-options">
+              <div class="search-options-wrapper">
+                <!-- for generating new array -->
+                <div class="generate-array">
+                  <button class="new-array btn shadow" id="generate-array">
+                    Generate array
+                  </button>
+                </div>
+                <!-- for element to be search -->
+                <div class="search-element">
+                  <input
+                    type="text"
+                    placeholder="Enter element to search"
+                    id="valueForSearch"
+                    required="required"
+                    autocomplete="off"
+                  />
+                </div>
+                <!-- for search to start -->
+                <div class="search-wrapper">
+                  <button class="search btn shadow" id="search">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- js file links -->
+    <script src="./Js/utilities.js"></script>
+    <script src="./Js/searchFunctions.js"></script>
+    <script src="./Js/script.js"></script>
+  </body>
+</html>
