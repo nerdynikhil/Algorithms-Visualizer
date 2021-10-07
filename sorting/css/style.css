@@ -39,7 +39,7 @@ footer {
 
 .center {
   margin: 0 auto;
-  border-top: 5px solid rgb(156, 0, 184);
+  border-top: 5px solid #4f9fbe;
   width: 90%;
   height: 80vh;
   border-radius: 5px;
@@ -111,7 +111,6 @@ select {
 
 #navbar {
   min-width: 400px;
-  background-color: rgb(98, 89, 184);
   margin-right: 20px;
 }
 
