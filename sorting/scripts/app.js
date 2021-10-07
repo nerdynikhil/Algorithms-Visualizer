@@ -92,7 +92,7 @@ const response = () => {
     }
 };
 
-document.querySelector(".icon").addEventListener("click", response)
+// document.querySelector(".icon").addEventListener("click", response)
 document.querySelector(".start").addEventListener("click", start);
 document.querySelector(".size-menu").addEventListener("change", RenderScreen);
 document.querySelector(".algo-menu").addEventListener("change", RenderScreen);
