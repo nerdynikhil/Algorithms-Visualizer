@@ -39,7 +39,7 @@ main {
 .glass,.sorting-home {
   min-height: 80vh;
   background: white;
-  width: 80%;
+  width:80vw;
   background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.7),

@@ -1,11 +1,6 @@
-* {
-  box-sizing: border-box;
-  background-color: #ffffff;
-}
 
-body {
-  margin: 0;
-  padding: 0;
+body{
+  overflow: hidden;
 }
 
 .container {
@@ -29,7 +24,8 @@ button {
   height: 44px;
   cursor: pointer;
   white-space: nowrap;
-  color: #658ec6;
+  color:white;
+  background-color: #658ec6;
   border: none;
   font-size: 20px;
 }
@@ -46,8 +42,10 @@ input {
   border: none;
   color: rgb(0, 0, 0);
   outline: none;
+  font-size: 20px;
   border-radius: 5px;
   box-shadow: 0px 11px 22px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
 }
 
 .box {
@@ -55,20 +53,16 @@ input {
   margin-left: 15px;
   background-color: rgba(0, 168, 197, 0.356);
   font-size: 20px;
-  width: 89px;
-  height: 68px;
+  width: 59px;
+  height: 48px;
   text-align: center;
   display: flex;
   border-radius: 4px;
   font-weight: 600;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.box-item-text {
-  background-color: inherit;
-}
 
 .box-item-icon {
   position: absolute;
@@ -85,10 +79,8 @@ input {
 /****************** nav bar section ************/
 
 .navbar {
-  width: 98vw;
-  position: relative;
-  margin: auto;
-  top: 1rem;
+  width: 100%;
+  margin-top: 2rem;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -101,23 +93,25 @@ input {
 }
 
 .nav-middle-section {
-  flex: 1;
-  flex-grow: 0;
-  max-width: 66.666667%;
-  flex-basis: 66.666667%;
+  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .linear-btn
 /* .binary-btn { */ {
   border-radius: 0;
-  /* border-bottom: 1px solid #658ec6; */
+  background: none;
+  color:#243441;
+  border-bottom: 3px solid #658ec6;
 }
 
 .binary-btn {
   border-radius: 0;
-  border-bottom: 1px solid #243441;
+  color:#243441;
+  border-bottom: 3px solid #658ec6;
+  background:none;
 }
 
 .search-btn {
@@ -134,17 +128,14 @@ input {
 /************* main body section *************/
 
 .main-wrapper {
-  width: 98vw;
+  width: 60vw;
   height: 80vh;
-  position: relative;
   margin: auto;
-  top: 1rem;
   overflow: hidden;
-  border-radius: 10px;
-  padding: 32px;
-  margin-top: 20px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Searching window */
@@ -168,12 +159,12 @@ input {
 
 /* search options section */
 .search-options-wrapper {
-  width: 90%;
   height: 100%;
   /* border-bottom: 1px solid hsla(0, 0%, 100%, 0.4); */
-  margin: 1rem auto;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -185,3 +176,4 @@ input {
 .search-wrapper {
   margin: 10px;
 }
+

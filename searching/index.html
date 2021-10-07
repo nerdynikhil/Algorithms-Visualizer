@@ -14,135 +14,37 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <div id="root">
-      <div class="outer-wrapper">
-        <!-- nav bar section -->
-        <nav class="navbar container shadow">
-          <!-- navbar left section -->
-          <!-- <div class="nav-left-section">
-            <h2><a href="">Searching Algorithms</a></h2>
-          </div> -->
-          <!-- navbar middle section -->
-          <div class="nav-middle-section">
-            <div class="linear-wrapper search-btn">
-              <button class="linear-btn btn" id="linear-search">
-                Linear Search
-              </button>
-            </div>
-            <div class="binary-wrapper search-btn">
-              <button class="binary-btn btn" id="binary-search">
-                Binary Search
-              </button>
-            </div>
+    <main>
+      <section class="glass">
+        <div class="dashboard">
+          <div class="head-title">
+            <h1>
+              <i
+                class="fa fa-home"
+                style="margin-bottom: 20px"
+                onclick="window.location='/'"
+              ></i>
+            </h1>
+            <h1>Searching</h1>
           </div>
-          <!-- navbar right section -->
-          <!-- <div class="nav-right-section">
-            <h2><a href="">Visualizer</a></h2>
-          </div> -->
-        </nav>
+          <!-- search option section -->
+          <div class="search-options">
+            <div class="search-options-wrapper">
+              <!-- for generating new array -->
+              <div class="generate-array">
+                <button class="new-array btn shadow" id="generate-array">
+                  Generate array
+                </button>
+              </div>
+              <!-- for element to be search -->
 
-        <!-- main body section  -->
-        <div class="main">
-          <div class="main-wrapper shadow">
-            <!-- searching visual section -->
-            <div class="search-window">
-              <div class="box-container">
-                <div class="box" id="box-wrapper-0">
-                  <!-- item text -->
-                  <div class="box-item-text" id="box0"></div>
-                  <!-- arrow icon -->
-                  <div class="box-item-icon">
-                    <i class="fas fa-long-arrow-alt-up"></i>
-                  </div>
-                </div>
-                <div class="box" id="box-wrapper-1">
-                  <!-- item text -->
-                  <div class="box-item-text" id="box1"></div>
-                  <!-- arrow icon -->
-                  <div class="box-item-icon">
-                    <i class="fas fa-long-arrow-alt-up"></i>
-                  </div>
-                </div>
-                <div class="box" id="box-wrapper-2">
-                  <!-- item text -->
-                  <div class="box-item-text" id="box2"></div>
-                  <!-- arrow icon -->
-                  <div class="box-item-icon">
-                    <i class="fas fa-long-arrow-alt-up"></i>
-                  </div>
-                </div>
-                <div class="box" id="box-wrapper-3">
-                  <!-- item text -->
-                  <div class="box-item-text" id="box3"></div>
-                  <!-- arrow icon -->
-                  <div class="box-item-icon">
-                    <i class="fas fa-long-arrow-alt-up"></i>
-                  </div>
-                </div>
-                <div class="box" id="box-wrapper-4">
-                  <!-- item text -->
-                  <div class="box-item-text" id="box4"></div>
-                  <!-- arrow icon -->
-                  <div class="box-item-icon">
-                    <i class="fas fa-long-arrow-alt-up"></i>
-                  </div>
-                </div>
-                <div class="box" id="box-wrapper-5">
-                  <!-- item text -->
-                  <div class="box-item-text" id="box5"></div>
-                  <!-- arrow icon -->
-                  <div class="box-item-icon">
-                    <i class="fas fa-long-arrow-alt-up"></i>
-                  </div>
-                </div>
-                <div class="box" id="box-wrapper-6">
-                  <!-- item text -->
-                  <div class="box-item-text" id="box6"></div>
-                  <!-- arrow icon -->
-                  <div class="box-item-icon">
-                    <i class="fas fa-long-arrow-alt-up"></i>
-                  </div>
-                </div>
-                <div class="box" id="box-wrapper-7">
-                  <!-- item text -->
-                  <div class="box-item-text" id="box7"></div>
-                  <!-- arrow icon -->
-                  <div class="box-item-icon">
-                    <i class="fas fa-long-arrow-alt-up"></i>
-                  </div>
-                </div>
-                <div class="box" id="box-wrapper-8">
-                  <!-- item text -->
-                  <div class="box-item-text" id="box8"></div>
-                  <!-- arrow icon -->
-                  <div class="box-item-icon">
-                    <i class="fas fa-long-arrow-alt-up"></i>
-                  </div>
-                </div>
-                <div class="box" id="box-wrapper-9">
-                  <!-- item text -->
-                  <div class="box-item-text" id="box9"></div>
-                  <!-- arrow icon -->
-                  <div class="box-item-icon">
-                    <i class="fas fa-long-arrow-alt-up"></i>
-                  </div>
-                </div>
-            </div>
-            <!-- search option section -->
-            <div class="search-options">
-              <div class="search-options-wrapper">
-                <!-- for generating new array -->
-                <div class="generate-array">
-                  <button class="new-array btn shadow" id="generate-array">
-                    Generate array
-                  </button>
-                </div>
-                <!-- for element to be search -->
+              <div class="search-wrapper">
                 <div class="search-element">
                   <input
-                    type="text"
+                    type="number"
                     placeholder="Enter element to search"
                     id="valueForSearch"
                     required="required"
@@ -150,15 +52,132 @@
                   />
                 </div>
                 <!-- for search to start -->
-                <div class="search-wrapper">
-                  <button class="search btn shadow" id="search">Search</button>
+                <button class="search btn shadow" id="search">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="root">
+          <div class="outer-wrapper">
+            <!-- nav bar section -->
+            <nav class="navbar container shadow">
+              <!-- navbar left section -->
+              <!-- <div class="nav-left-section">
+            <h2><a href="">Searching Algorithms</a></h2>
+          </div> -->
+              <!-- navbar middle section -->
+              <div class="nav-middle-section">
+                <div class="linear-wrapper search-btn">
+                  <button class="linear-btn btn" id="linear-search">
+                    Linear Search
+                  </button>
+                </div>
+                <div class="binary-wrapper search-btn">
+                  <button class="binary-btn btn" id="binary-search">
+                    Binary Search
+                  </button>
+                </div>
+              </div>
+              <!-- navbar right section -->
+              <!-- <div class="nav-right-section">
+            <h2><a href="">Visualizer</a></h2>
+          </div> -->
+            </nav>
+
+            <!-- main body section  -->
+            <div class="main">
+              <div class="main-wrapper shadow">
+                <!-- searching visual section -->
+                <div class="search-window">
+                  <div class="box-container">
+                    <div class="box" id="box-wrapper-0">
+                      <!-- item text -->
+                      <div class="box-item-text" id="box0"></div>
+                      <!-- arrow icon -->
+                      <div class="box-item-icon">
+                        <i class="fas fa-long-arrow-alt-up"></i>
+                      </div>
+                    </div>
+                    <div class="box" id="box-wrapper-1">
+                      <!-- item text -->
+                      <div class="box-item-text" id="box1"></div>
+                      <!-- arrow icon -->
+                      <div class="box-item-icon">
+                        <i class="fas fa-long-arrow-alt-up"></i>
+                      </div>
+                    </div>
+                    <div class="box" id="box-wrapper-2">
+                      <!-- item text -->
+                      <div class="box-item-text" id="box2"></div>
+                      <!-- arrow icon -->
+                      <div class="box-item-icon">
+                        <i class="fas fa-long-arrow-alt-up"></i>
+                      </div>
+                    </div>
+                    <div class="box" id="box-wrapper-3">
+                      <!-- item text -->
+                      <div class="box-item-text" id="box3"></div>
+                      <!-- arrow icon -->
+                      <div class="box-item-icon">
+                        <i class="fas fa-long-arrow-alt-up"></i>
+                      </div>
+                    </div>
+                    <div class="box" id="box-wrapper-4">
+                      <!-- item text -->
+                      <div class="box-item-text" id="box4"></div>
+                      <!-- arrow icon -->
+                      <div class="box-item-icon">
+                        <i class="fas fa-long-arrow-alt-up"></i>
+                      </div>
+                    </div>
+                    <div class="box" id="box-wrapper-5">
+                      <!-- item text -->
+                      <div class="box-item-text" id="box5"></div>
+                      <!-- arrow icon -->
+                      <div class="box-item-icon">
+                        <i class="fas fa-long-arrow-alt-up"></i>
+                      </div>
+                    </div>
+                    <div class="box" id="box-wrapper-6">
+                      <!-- item text -->
+                      <div class="box-item-text" id="box6"></div>
+                      <!-- arrow icon -->
+                      <div class="box-item-icon">
+                        <i class="fas fa-long-arrow-alt-up"></i>
+                      </div>
+                    </div>
+                    <div class="box" id="box-wrapper-7">
+                      <!-- item text -->
+                      <div class="box-item-text" id="box7"></div>
+                      <!-- arrow icon -->
+                      <div class="box-item-icon">
+                        <i class="fas fa-long-arrow-alt-up"></i>
+                      </div>
+                    </div>
+                    <div class="box" id="box-wrapper-8">
+                      <!-- item text -->
+                      <div class="box-item-text" id="box8"></div>
+                      <!-- arrow icon -->
+                      <div class="box-item-icon">
+                        <i class="fas fa-long-arrow-alt-up"></i>
+                      </div>
+                    </div>
+                    <div class="box" id="box-wrapper-9">
+                      <!-- item text -->
+                      <div class="box-item-text" id="box9"></div>
+                      <!-- arrow icon -->
+                      <div class="box-item-icon">
+                        <i class="fas fa-long-arrow-alt-up"></i>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
     <!-- js file links -->
     <script src="./Js/utilities.js"></script>
     <script src="./Js/searchFunctions.js"></script>
