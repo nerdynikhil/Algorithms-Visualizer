@@ -46,15 +46,15 @@ searchBtn.addEventListener("click", () => {
 // event listner for selecting type of search method(linear or binary)
 // for linear search
 linearSearchBtn.addEventListener("click", () => {
-  binarySearchBtn.style.borderBottomColor = "#243441";
-  linearSearchBtn.style.borderBottom = "1px solid white";
+  binarySearchBtn.style.borderBottomColor = "#658ec6";
+  linearSearchBtn.style.borderBottom = "3px solid #243441";
   searchType = "linear";
 });
 
 // for binary search
 binarySearchBtn.addEventListener("click", () => {
-  linearSearchBtn.style.borderBottomColor = "#243441";
-  binarySearchBtn.style.borderBottom = "1px solid white";
+  linearSearchBtn.style.borderBottomColor = "#658ec6";
+  binarySearchBtn.style.borderBottom = "3px solid #243441";
   if (searchType != "binary") {
     searchType = "binary";
     insertRandomArray();
